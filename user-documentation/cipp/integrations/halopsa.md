@@ -15,10 +15,11 @@ description: Configuring the Halo PSA Ticketing integration
 6. Set the **Authentication Method** to _Client ID and Secret (Services)_.
 7. Store the **Client ID** and **Client Secret** securely.
 8. Set the **Login Type** and **Agent to login as** appropriately.\
-   \&#xNAN;_This setting will determine who appears to be responsible for these API calls. You may want to create a dedicated agent user for this purpose._ _This agent needs to be an administrator in Halo, other roles maybe possible but have not been tested_
-9. Select the **Permissions** tab.
-10. Grant the application the permissions required for your purposes.\
-    \&#xNAN;_Generally speaking you want to limit the API to only the permissions it needs. For CIPP this currently requires read:tickets, edit:tickets, read:customers, edit:customers._
+   This setting will determine who appears to be responsible for these API calls. You may want to create a dedicated agent user for this purpose._ _This agent needs to be an administrator in Halo, other roles maybe possible but have not been tested_\
+   Agent permissions must include Tickets Access Level - Read and Modify, Clients Access Level - Read and Modify, and Can add new Tickets - Yes
+10. Select the **Permissions** tab.
+11. Grant the application the permissions required for your purposes.\
+    Generally speaking you want to limit the API to only the permissions it needs. For CIPP this currently requires read:tickets, edit:tickets, read:customers, edit:customers._
 
 #### Configure the HaloPSA Integration in CIPP
 
@@ -31,16 +32,5 @@ description: Configuring the Halo PSA Ticketing integration
 7. Make sure the **Enable Integration** button is enabled, and then click on the **Submit** button to save the config
 8. Select the HaloPSA Ticket Type and HaloPSA Outcome if you would like to override the defaults
 9. Map the tenants in CIPP to the customers in Halo in the **Tenant Mapping** screen, either manually or using automap. Remember to click on the **Submit** button to save the mappings
-
-#### Ticket Type
-
-To get the Ticket Type ID, follow these steps:
-
-1. Navigate to Configuration -> Tickets -> Ticket Type
-2. Click on the desired ticket type and then the URL will display the ticket type ID.
-
-Example: https://{halo instance url}/config/tickets/tickettype?id=**1**
-
-***
 
 {% include "../../../.gitbook/includes/feature-request.md" %}
