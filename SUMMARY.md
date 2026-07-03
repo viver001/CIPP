@@ -34,6 +34,7 @@
       * [Standards](setup/implementation-guide/your-route-to-a-secure-tenant/course-dont-accept-the-defaults/standards.md)
       * [Reporting](setup/implementation-guide/your-route-to-a-secure-tenant/course-dont-accept-the-defaults/reporting.md)
 * [Resources](setup/resources/README.md)
+  * [How CIPP Evaluates Roles](setup/resources/how-cipp-evaluates-roles.md)
   * [Professional Onboarding Services](setup/resources/professional-onboarding-services.md)
   * [Sponsor Quick Start](setup/resources/sponsor-quick-start.md)
 
